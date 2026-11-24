@@ -1,43 +1,24 @@
-# Grow Your Farm (C++)
+# Grow Your Farm (GitHub Pages)
 
-A small 3D farming game starter made with C++ and raylib.
+A playable browser farming game inspired by garden-growing games. It uses plain HTML, CSS, and JavaScript, so it runs directly in a browser—no C++ compiler or downloads needed.
 
-## Features
-- 3D garden with 25 soil plots
-- Four seed types with different prices, growth times, and sell values
-- Crops grow in real time while the game is running
-- Buy seeds, plant them, and harvest ripe crops for coins
-- Simple seed shop and inventory display
+## Play locally
+Open `index.html` in a modern browser.
 
-## Controls
-- `1` to `4`: Select a seed while the shop is closed
-- `B`: Open or close the seed shop
-- In the shop, press `1` to `4` to buy that seed
-- Left-click an empty soil plot to plant
-- Left-click a fully grown crop to harvest it
+## Publish on GitHub Pages
+1. Create/open a GitHub repository.
+2. Upload `index.html` and `README.md` to the repository's **root** (top level).
+3. Open the repository's **Settings**.
+4. Select **Pages** in the left sidebar.
+5. Under **Build and deployment**, choose **Deploy from a branch**.
+6. Set branch to `main` and folder to `/ (root)`, then click **Save**.
+7. Wait a minute or two. GitHub will show your game URL in the Pages section.
 
-## Build on Windows with Visual Studio and vcpkg
+## Gameplay
+- Select a seed, then click an empty plot.
+- Crops grow in real time.
+- Click ripe crops to harvest coins.
+- Buy better seeds and expand your garden.
+- Progress saves in the browser using local storage.
 
-1. Install CMake and Visual Studio 2022 with the **Desktop development with C++** workload.
-2. Install vcpkg, then install raylib:
-
-   ```powershell
-   vcpkg install raylib:x64-windows
-   ```
-
-3. From this folder, configure the project (replace the path with your vcpkg location):
-
-   ```powershell
-   cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake"
-   ```
-
-4. Build it:
-
-   ```powershell
-   cmake --build build --config Release
-   ```
-
-5. Run `build/Release/GrowYourFarm.exe`.
-
-## Notes
-This is a starter game project, not a Roblox project. It uses raylib for its 3D window, rendering, input, and camera ray picking.
+This is an original small browser game project; it is not affiliated with the Roblox game Grow a Garden.
